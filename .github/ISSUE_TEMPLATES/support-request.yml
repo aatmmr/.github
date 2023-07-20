@@ -1,0 +1,27 @@
+name: Support Request [Org]
+description: Issue to contact support provided by organisation.
+title: "[Support Request] "
+labels: [support-request]
+body:
+- type: dropdown
+  attributes:
+    label: ">>Topic<<"
+    options:
+      - Organisation
+      - Repository
+      - Security
+      - Billing
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: ">>Tile<<"
+    description: Please give a brief description of your issue.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: ">>Request<<"
+    description: Please describe your issue and where you need assistance.
+  validations:
+    required: true
